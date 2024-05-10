@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/*- Общие стили */
+
+body{
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: #1c1c1c;
+        color: #fff;
+}
+
+a{
+        color: #fff;
+        text-decoration: none;
+}
+
+p {
+       margin: 0; 
+}
+
+p + p{
+      margin-top: 15px;  
+}
+
+ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+        font-weight: 500;
+        margin: 0;
+}
+img{
+        max-width: 100px;
+}
+
+.container{
+        box-sizing: border-box;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+}
+
+
+
+.btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 165;
+        height: 50;
+        
+        font-weight: 500;
+        font-size: 16px;
+        
+        padding: 15px;
+        text-transform: uppercase;
+        background: rgb(207, 96, 6);
+        border-radius: 5px;
+        transition: opacity 0.3s;
+        display: inline-block;
+}
+
+.btn:hover{
+        opacity: 0.8;
+}
+
+.btn--small{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 50px;
+        height: 5px;
+        font-size: 12px;
+        font-weight: 200;
+}
+
+
+
+/*- Шапка */
+
+.header{
+        padding: 25px 0;
+        position: relative;
+        z-index: 10;
+}
+
+.header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.header__logo{
+
+}
+
+.header__nav{
+
+}
+
+.header__list{
+        display: flex;
+        gap: 30px;
+}
+
+.header__nav a {
+        font-size: 14px;
+        opacity: 0.7;
+        transition: opacity 0.3s;
+}
+
+.header__nav a:hover {
+        opacity: 0.9;
+}
+
+.header__nav a:active{
+        opacity: 1;
+}
+
+.main{
+
+}
+
+/*-Тело*/
+
+.welcome{
+        box-sizing: border-box;
+        min-height: 100vh;
+        margin-top: -120px;
+        padding: 400px 0;
+
+        background-image: url(./fon.jpg);
+        background-repeat: no repeat;
+        background-size: cover;
+        background-position: center;
+}
+
+.welcome .text{
+        width: 550px;
+}
+
+.welcome__subtitle{
+     margin-bottom: 7px;
+
+     font-size: 14px;
+     letter-spacing: 0.1em;   
+}
+.welcome__title{
+        font-size: 58px;
+}
+.welcome__desc{
+        margin: 40px 0;
+        font-size: 18px;
+        opacity: 0.7;
+}
+
+
+/*-Полезное*/
+
+.food-list{
+padding: 100px 0;
+}
+
+.food-list .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px 10px;
+}
+
+.food-list__card{
+        width: 260px;
+
+        overflow: hidden;
+        text-align: center;
+
+        background: #312f30;
+        border-radius: 10px;
+        padding: 0 20px;
+}
+
+
+.food-list__img{
+        float: left;
+        max-width: 100%;
+        height: 350px;
+        object-fit: cover;
+}
+
+.food-list__text-wrapper{
+        padding: 30px 20px;
+}
+
+.food-list__title{
+        margin-bottom: 13px;
+        font-size: 20px;
+
+}
+
+.food-list__desc{
+        font-size: 16px;
+        opacity: 0.7;
+}
+
+/*-Второй*/
+
+.order{
+        background: #312f30;
+        padding: 60px 0;
+}
+
+.order .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-right: 90PX;
+}
+
+.order__img{
+        max-width: 470px;
+        border-radius: 100px;
+
+}
+
+.order__text{
+        max-width: 600px;
+}
+
+.order__title{
+        margin-bottom: 25px;
+        font-size: 44px;
+}
+
+.order__desc{
+        margin-bottom: 15px;
+        opacity: 0.7;
+}
+.order__price{
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        color: #f6762c;
+}
+
+.order__price--old{
+        font-size: 16px;
+        text-decoration-line: line-through;
+        opacity: 0.5;
+}
+.order__price + .order__price{
+        margin-left: 4px;
+}
+
+.order .btn{
+        margin-top: 10px;
+}
+
+/*ТРЕТИЙ*/
+
+.product{
+        padding: 150px 0;
+}
+.product .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 45px;
+        
+}
+.product__card{
+        box-sizing: border-box;
+
+        width: 550px;
+        min-height: 300px;
+        
+        padding: 60px 25px 60px 300px;
+        background-color: #4b3a3a;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+.product__card:nth-child(even){
+        padding-left: 30px;
+        padding-right: 290px;
+}
+
+.product__title{
+        margin-bottom: 20px;
+        font-size: 25px;
+}
+.product__desc{
+        margin-bottom: 10px;
+        opacity: 0.7;
+}
+.product__price{
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        color: #f6762c;
+}
+
+.product__price + .product__price{
+        margin-left: 4px;
+}
+.product__price--old{
+        font-size: 20px;
+        text-decoration-line: line-through;
+        opacity: 0.5;
+}
+
+.product .btn{
+        margin-top: 10px;
+}
+
+.card-queen{
+       background-image: url(./mucskoe.jpg);
+}
+
+.card-hut{
+        background-image: url(./otec\ i\ sin.jpg);
+ }
+ .card-king{
+        background-image: url(./kompleks.jpg);
+ }
+ .card-papa{
+        background-image: url(./dedskoe.jpg);
+ }
+/*ПАДВАЛ*/
+
+ .footer {
+        padding: 120px 0;
+}
+
+.footer a{
+        font-size: 15px;
+        color: rgb(255, 255, 255, 0.8);
+        transition: color 0.3s;
+}
+
+.footer a:hover{
+           color: rgb(255, 255, 255, 0.9);
+   }
+.footer .footer__title {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 19px;
+        color: #fff;
+}
+.footer .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: contacts nav socials;
+}
+
+.footer__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+}
+
+.footer__logo {
+        width: 70px;
+        margin-bottom: 20px;
+}
+.footer__link{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+}
+.footer__link + .footer__link {
+        margin-top: 10px;
+}
+.footer__link::before{
+        width: 12px;
+        height: 12px;
+}
+
+.footer__link-mail::before {
+        content: url(./mail.png);
+}
+
+.footer__link-web::before {
+        content: url(./web.png);
+}
+
+.footer__nav {
+
+}
+
+.footer__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__list-title {
+
+}
+
+
+
+.footer__inner-list {
+
+}
+
+.footer__list-item + .footer__list-item {
+        margin-top: 15px;
+}
+
+.footer__social {
+
+}
+
+.footer_title {
+
+}
+
+.footer__social-icons {
+
+}
+
+.footer__social-link + .footer__social-link {
+         margin-left: 8px;
+
+}
+
+@media (max-width:1330px){
+        .order .container {
+                flex-direction: column;
+                padding-right: 0;
+        }
+        .order__text{
+                text-align: center;
+        }
+        .order .btn{
+                margin-left: auto;
+                margin-right: auto;
+        }
+}
+@media (max-width:950px){
+        .food-list .container{
+                justify-content: space-evenly;
+        }
+}
+@media (max-width:850px){
+        .footer .container{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "nav nav"
+                                     "contacts socials";
+                justify-items: center;
+                gap: 40px 150px;
+        }    
+        .footer__contacts{
+                grid-area: contacts;
+                justify-content: end;
+        }
+        .footer__nav{
+                grid-area: nav;
+        }
+        .footer__social{
+                grid-area: socials;
+                align-self: center;
+                justify-content: start;
+        }
+        .footer__list{
+                gap: 80px;
+        }
+}
+@media (max-width:650px){
+        .welcome__title{
+                font-size: 40px;
+        }
+        .welcome__desc{
+                margin: 20px 0;
+        }
+        .product{
+                padding: 60px 0 20px;
+        }
+        .product__card{
+                width: 100%;
+        }
+}
